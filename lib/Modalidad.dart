@@ -1,0 +1,4 @@
+enum Modalidad { 
+    Anual,
+    Mensual
+}
