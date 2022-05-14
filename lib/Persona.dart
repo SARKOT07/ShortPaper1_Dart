@@ -6,12 +6,7 @@ abstract class Persona {
   String _id;
   String _nombre;
   String _apellido;
-  Persona(String id, String nombre, String apellido) {
-    this._id = id;
-    this._nombre = nombre;
-    this._apellido = apellido;
-  }
-
+  Persona(this._id, this._nombre, this._apellido);
   String get id {
     return _id;
   }
