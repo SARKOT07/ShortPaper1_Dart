@@ -1,3 +1,4 @@
+import 'package:shortpaper1_dart/Admin.dart';
 import 'package:shortpaper1_dart/Estado.dart';
 import 'package:shortpaper1_dart/Modalidad.dart';
 import 'package:shortpaper1_dart/Paciente.dart';
@@ -19,15 +20,36 @@ void main() {
   switch (value) {
     case "1":
       {
-        print('Escriba una especialidad');
-        String value = stdin.readLineSync()!;
-        var especialidad = Especialidad('1', value);
-        List<num> Telefono = [04241587848];
-        var Suscribir = Suscripcion(
-            '1', DateTime.now(), 200000, Modalidad.Mensual, Estado.Activo, false);
-        var PacienteO = Paciente('1', 'Pepe', 'Perez', DateTime.now(), 'Informatico',
-            80, Telefono, 'diegocumares@gmail.com', Suscribir);
-        PacienteO.buscarDoctorE(especialidad);
+        print('Primero debe crear un paciente');
+        var admin =Admin();
+        Paciente paciente=admin.registrarPaciente();
+        print('Usuario registrado satisfactoriamente!!');
+        print('1:Seguir con la consulta del doctor');
+        print('2:Ver tus datos');
+        print('3:Salir');
+        String value1 = stdin.readLineSync()!;
+
+          switch(value1){
+            case '1':{
+              print('Escriba una especialidad');
+              String value = stdin.readLineSync()!;
+              var especialidad = Especialidad('1', value);
+              paciente.buscarDoctorE(especialidad);
+            } break;
+            case '2':{
+              paciente.consultar(paciente);
+            }break;
+              case '3':{
+            exit;
+              }break;
+          default:
+          {
+          print("Opcion invalida");
+          }
+      break;
+
+        }
+
       }
       break;
 
@@ -43,6 +65,4 @@ void main() {
       }
       break;
   }
-/*
-*/
 }

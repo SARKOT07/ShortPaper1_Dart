@@ -32,6 +32,6 @@ abstract class Persona {
     _apellido = apellido;
   }
 
-  void modificar();
-  void consultar();
+  void modificar(persona);
+  void consultar(persona);
 }

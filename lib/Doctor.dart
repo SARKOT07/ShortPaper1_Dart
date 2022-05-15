@@ -20,8 +20,8 @@ class Doctor extends Persona {
     this._historialMedicoRealizado = [];
     this._citasAgendadas = [];
   }
-  void modificar() {}
-  void consultar() {}
+  void modificar(persona) {}
+  void consultar(persona) {}
   HistorialMedico crearHistoriaMedica(HistorialMedico value) {
     return value;
   }

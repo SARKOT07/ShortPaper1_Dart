@@ -87,8 +87,10 @@ class Paciente extends Persona {
   }
 
   //methods
-  void modificar() {}
-  void consultar() {}
+  void modificar(persona) {}
+  void consultar(persona) {
+    print("Nombre:${persona.nombre}-Apellido:${persona.apellido}-Fecha de nacimiento:${persona.fechaNacimiento}-Profesion:${persona.profesion}-Peso:${persona.peso}-Telefono:${persona.telefono}-Correo:${persona.correoElectronico}:Suscripcion:${persona.suscripcion.modalidad}");
+  }
   num calcularEdad() {
     const zero = 0;
     return zero;
@@ -103,7 +105,7 @@ class Paciente extends Persona {
     ];
 
     List<Doctor> Listadedoctores = [
-      Doctor('1', 'Diego', 'Cumares', Listadeespecialidad),
+      Doctor('1', 'Eduardo', 'Reyes', Listadeespecialidad),
       Doctor('2', 'Franco', 'Gavidia', Listadeespecialidad),
       Doctor('3', 'Iliana', 'Dias', Listadeespecialidad2),
       Doctor('4', 'Daniel', 'Luis', Listadeespecialidad2),
