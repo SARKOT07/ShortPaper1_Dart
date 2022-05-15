@@ -4,6 +4,8 @@ import 'package:shortpaper1_dart/HistorialMedico.dart';
 import 'package:shortpaper1_dart/Persona.dart';
 import 'package:shortpaper1_dart/Especialidad.dart';
 import 'package:shortpaper1_dart/Doctor.dart';
+import 'package:shortpaper1_dart/CitaPresencial.dart';
+import 'package:shortpaper1_dart/CitaVirtual.dart';
 
 class Paciente extends Persona {
   DateTime _fechaNacimiento;
@@ -11,7 +13,8 @@ class Paciente extends Persona {
   num _peso;
   List<num> _telefono;
   String _correoElectronico;
-  List<Cita> _listaDeCitas = [];
+  List<CitaPresencial> _listaDeCitasPresencial = [];
+  List<CitaVirtual> _listaDeCitasVirtual = [];
   Suscripcion _suscripcion;
 
   Paciente(
@@ -25,7 +28,8 @@ class Paciente extends Persona {
       this._correoElectronico,
       this._suscripcion)
       : super(id, nombre, apellido) {
-    this._listaDeCitas = [];
+    this._listaDeCitasPresencial = [];
+    this._listaDeCitasVirtual = [];
   }
 
   //Getters
@@ -49,8 +53,12 @@ class Paciente extends Persona {
     return _correoElectronico;
   }
 
-  List<Cita> get listaDeCitas {
-    return _listaDeCitas;
+  List<CitaPresencial> get listaDeCitasPresencial {
+    return _listaDeCitasPresencial;
+  }
+
+  List<CitaVirtual> get listaDeCitasVirtual {
+    return _listaDeCitasVirtual;
   }
 
   Suscripcion get suscripcion {
@@ -78,8 +86,12 @@ class Paciente extends Persona {
     _correoElectronico = correoElectronico;
   }
 
-  set listaDeCitas(List<Cita> listaDeCitas) {
-    _listaDeCitas = listaDeCitas;
+  set listaDeCitasPresencial(List<CitaPresencial> listaDeCitasPresencial) {
+    _listaDeCitasPresencial = listaDeCitasPresencial;
+  }
+
+  set listaDeCitasVirtual(List<CitaVirtual> listaDeCitasVirtual) {
+    _listaDeCitasVirtual = listaDeCitasVirtual;
   }
 
   set suscripcion(Suscripcion suscripcion) {
