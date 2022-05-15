@@ -1,5 +1,4 @@
 import 'package:shortpaper1_dart/Suscripcion.dart';
-import 'package:shortpaper1_dart/Cita.dart';
 import 'package:shortpaper1_dart/HistorialMedico.dart';
 import 'package:shortpaper1_dart/Persona.dart';
 import 'package:shortpaper1_dart/Especialidad.dart';
@@ -108,7 +107,8 @@ class Paciente extends Persona {
     return zero;
   }
 
-  void pedirCita() {}
+  void pedirCitaPresencial() {}
+  void pedirCitaVirtual() {}
   void buscarDoctor(String coordenadas) {}
   void buscarDoctorE(Especialidad especialidad) {
     List<Especialidad> Listadeespecialidad = [Especialidad('1', 'Pediatra')];
