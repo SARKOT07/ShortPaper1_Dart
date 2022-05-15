@@ -5,15 +5,9 @@ class Auditoria {
   String _id;
   DateTime _fecha;
   EventoComportamiento _comportamiento;
-  List<Persona> _auditoriaDePersona = [];
+  Persona _auditoriaDePersona;
 
   Auditoria(this._id, this._fecha, this._comportamiento, this._auditoriaDePersona);
-
-  void asignarComportamiento(Persona persona) {}
-
-  void verAuditoria(Persona persona) {}
-
-  void guardar(){}
 
   String get id => _id;
 
@@ -33,9 +27,15 @@ class Auditoria {
     _comportamiento = value;
   }
 
-  List<Persona> get auditoriaDePersona => _auditoriaDePersona;
+  Persona get auditoriaDePersona => _auditoriaDePersona;
 
-  set auditoriaDePersona(List<Persona> value) {
+  set auditoriaDePersona(Persona value) {
     _auditoriaDePersona = value;
   }
+
+  void asignarComportamiento(Persona persona) {}
+
+  void verAuditoria(Persona persona) {}
+
+  void guardar() {}
 }

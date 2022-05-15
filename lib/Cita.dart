@@ -2,13 +2,13 @@ import 'package:shortpaper1_dart/HistorialMedico.dart';
 import 'package:shortpaper1_dart/Paciente.dart';
 
 class Cita {
+
   String _id ;
   DateTime _fechaYHora ;
   Paciente _personaCitada;
   HistorialMedico _historialMedicoDeLaCita;
 
-  Cita(this._id, this._fechaYHora, this._personaCitada,
-      this._historialMedicoDeLaCita);
+  Cita(this._id, this._fechaYHora, this._personaCitada, this._historialMedicoDeLaCita);
 
   HistorialMedico get historialMedicoDeLaCita => _historialMedicoDeLaCita;
 
