@@ -1,0 +1,5 @@
+
+enum EventoNotificacion {
+  cambioDeHistorialMedico,
+  cancelacionCita
+}
