@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:shortpaper1_dart/Especialidad.dart';
 import 'package:shortpaper1_dart/Persona.dart';
 import 'package:shortpaper1_dart/Cita.dart';
@@ -9,9 +11,15 @@ class Doctor extends Persona {
   List<Cita> _citasAgendadas = [];
   List<HistorialMedico> _historialMedicoRealizado = [];
 
-  Doctor(String id, String nombre, String apellido, this._citasAgendadas,
-      this._especialidadDelDoctor, this._historialMedicoRealizado)
-      : super(id, nombre, apellido);
+  Doctor(
+    String id,
+    String nombre,
+    String apellido,
+    this._especialidadDelDoctor,
+  ) : super(id, nombre, apellido) {
+    this._historialMedicoRealizado = [];
+    this._citasAgendadas = [];
+  }
   void modificar() {}
   void consultar() {}
   HistorialMedico crearHistoriaMedica(HistorialMedico value) {
