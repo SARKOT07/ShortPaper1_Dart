@@ -35,8 +35,7 @@ Para iniciar la simulación localmente, siga las instrucciones que se especifica
 2. En la ventana de comandos, dirigirse hacia la la direccion /bin
 3. Ejecutar el arhivo `shortpaper1_dart.dart` para iniciar la simulación. 
 4. En pantalla se mostraran 2 opciones “1.Buscar un Doctor por especialidad” y “2.Salir” se selecciona la opción 1.
-5. Se pide agendar un paciente; Un ejemplo de los datos pueden ser:
-<p>`registrarPaciente()`</p>
+5. Se pide agendar un paciente; Un ejemplo de los datos pueden ser: **registrarPaciente()**
 <p>a.	Pedro</p>
 <p>b.	Velasquez</p>
 <p>c.	Informatico</p>
