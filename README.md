@@ -36,13 +36,13 @@ Para iniciar la simulación localmente, siga las instrucciones que se especifica
 3. Ejecutar el arhivo `shortpaper1_dart.dart` para iniciar la simulación. 
 4. En pantalla se mostraran 2 opciones “1.Buscar un Doctor por especialidad” y “2.Salir” se selecciona la opción 1.
 5. Se pide agendar un paciente; Un ejemplo de los datos pueden ser:
-**registrarPaciente()**
-a.	Pedro
-b.	Velasquez
-c.	Informatico
-d.	20
-e.	04141584875
-f.	prueba@gmail.com
+<p>**registrarPaciente()**</p>
+<p>a.	Pedro</p>
+<p>b.	Velasquez</p>
+<p>c.	Informatico</p>
+<p>d.	20</p>
+<p>e.	04141584875</p>
+<p>f.	prueba@gmail.com</p>
 6. En este punto se colocara 3 nuevas opciones “1:Seguir con la consulta del doctor”, “2:Ver tus datos” Y “3.Salir”. 
 7. Si selecciona la primera opción se le pide por pantalla la especialidad que desea buscar, puede colocar Pediatra o Oftalmologo para que devuelva algún valor, en caso contrario no devolverá nada porque no hay ningún doctor con esta especialidad. 
 **buscarDoctorE()**
