@@ -1,4 +1,4 @@
-import 'package:shortpaper1_dart/cita.dart';
+import 'package:shortpaper1_dart/Cita.dart';
 import 'package:shortpaper1_dart/HistorialMedico.dart';
 import 'package:shortpaper1_dart/Paciente.dart';
 
@@ -34,5 +34,17 @@ class CitaPresencial extends Cita {
 
   set direccion(String value) {
     _direccion = value;
+  }
+
+  void modificarCita (){
+    super.modificarCita();
+  }
+
+  void eliminarCita (){
+    super.eliminarCita();
+  }
+
+  void consultarCita (){
+    
   }
 }
