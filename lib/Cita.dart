@@ -34,15 +34,15 @@ class Cita {
     _id = value;
   }
 
-  void modificarCita (Cita citaSolicitada){
+  void modificarCita (){
 
   }
 
-  void eliminarCita (Cita citaSolicitada){
+  void eliminarCita (){
 
   }
 
-  void consultarCita (Cita citaSolicitada){
+  void consultarCita (){
 
   }
 }

@@ -28,4 +28,17 @@ class CitaVirtual extends Cita {
   set url(String value) {
     _url = value;
   }
+
+  void modificarCita (){
+    super.modificarCita();
+
+  }
+
+  void eliminarCita (){
+    super.eliminarCita();
+  }
+
+  void consultarCita (){
+
+  }
 }

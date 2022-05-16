@@ -108,7 +108,9 @@ class Paciente extends Persona {
   }
 
   void pedirCitaPresencial() {}
+
   void pedirCitaVirtual() {}
+
   void buscarDoctor(String coordenadas) {}
   void buscarDoctorE(Especialidad especialidad) {
     List<Especialidad> Listadeespecialidad = [Especialidad('1', 'Pediatra')];
