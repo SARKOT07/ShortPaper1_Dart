@@ -43,7 +43,7 @@ Para iniciar la simulación localmente, siga las instrucciones que se especifica
 **consultar()** 
 
 
-## ⚙️Colaboladores
+## 🌎Colaboladores
 
 - **Diego Cumares** - [CRONOXT](https://github.com/CRONOXT)
 - **Iliana Dias** - [ilixna](https://github.com/ilixna)
